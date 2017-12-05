@@ -1,0 +1,44 @@
+###################################### abstract
+Farey sequence 法里数列 --> 0至1之间的最简数列（每个分数的分母不大于n，由小到大排列）
+	F3 = {0/1, 1/3, 1/2, 2/3, 1/1}
+  
+Order statistics 顺序统计量 --> 样本的第k顺序量就是它从小到大排列的第k个值
+
+Sublinear time 即摘要所提的 nearly O(n^2/3)
+
+Lattice 图形所包含的方格点（含边上的点）
+
+###################################### intro
+生成数列的最优算法是O(n^2) --> 不生成数列？
+
+STAT(k,n) --> 第k个数在Fn中
+RANK(a,n) --> |Fn ∩ [0,a]| for a ∈ [0,1]
+
+Comparison query 比较查询 --> Rank > k 则猜测分数大于目标分数
+
+primitive lattices 原始格点 --> (x,y) s.t. gcd(x,y) = 1 <=> x/y is irreducible
+	原始 是为 原点可见，即在原点与(x,y)之间没有其他点
+  
+RANK(a,n) <=> count primitive lattices in the triangle defined by (0, 0), (n, 0), (n, a*n)
+
+###################################### rank problem
+Sn --> 有多少a/b
+
+(1) 式
+
+O(n^(3/4)) --> O(n^(2/3)*(log n)^(1/3)) similar in flavor to Eratosthenes sieve
+Eratosthenes sieve 埃式筛法（选质数）--> 除去√n以下的质数的倍数（从2开始）
+	more specifically ???
+		
+(2) & (3) 式 Mertens function ???
+
+###################################### count points
+(4) 式 <-- (1) 式
+
+P/(D+1) is less than 1, so it does not contain any lattice point outside the origin.
+
+...
+
+###################################### appendix A
+
+... 
